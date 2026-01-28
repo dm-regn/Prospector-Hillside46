@@ -41,8 +41,6 @@
 &kp LCTRL  &kp Z  &kp X  &kp C  &kp V     &kp B     &kp ESC                     &caps_word  &kp N     &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
                                 &kp LGUI  &kp LALT  &sk LSHIFT  &mo 1    &mo 2  &kp SPACE   &kp LALT  &kp RGUI
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         nav_layer {
