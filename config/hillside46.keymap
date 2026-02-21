@@ -621,10 +621,10 @@
 
             display-name = "HILLSIDE";
             bindings = <
-&act_dir 0 0  &kp B        &kp W  &kp M  &kp P  &kp Z                                                  &none            &kp F  &kp U  &kp Y  &kp Q        &none
-&sl 4         &kp A        &kp S  &kp D  &kp F  &kp G                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
-&kp ENTER     &key_repeat  &kp X  &kp C  &kp V  &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
-                                         &none  &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LC(LA(DEL))  &none
+&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &none            &kp F  &kp U  &kp Y  &kp Q        &none
+&sl 4         &kp A        &kp S  &kp D  &kp F        &kp G                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
+&kp ENTER     &key_repeat  &kp X  &kp C  &kp V        &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
+                                         &none        &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LC(LA(DEL))  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
