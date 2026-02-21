@@ -128,6 +128,13 @@
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
+
+        dbl_mclk {
+            bindings = <&dbl_mclk>;
+            key-positions = <31 43>;
+            layers = <1>;
+            require-prior-idle-ms = <5>;
+        };
     };
 
     behaviors {
@@ -614,10 +621,10 @@
 
             display-name = "HILLSIDE";
             bindings = <
-&act_dir 0 0  &kp B        &kp W  &kp M  &kp P  &kp Z                                                  &none     &kp F  &kp U  &kp Y  &kp Q        &none
-&sl 4         &kp A        &kp S  &kp D  &kp F  &kp G                                                  &kp J     &kp N  &kp A  &kp I  &kp O        &sl 4
-&kp ENTER     &key_repeat  &kp X  &kp C  &kp V  &mt F4 ESC       &none                        &none    &kp LGUI  &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
-                                         &none  &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LALT  &none
+&act_dir 0 0  &kp B        &kp W  &kp M  &kp P  &kp Z                                                  &none            &kp F  &kp U  &kp Y  &kp Q        &none
+&sl 4         &kp A        &kp S  &kp D  &kp F  &kp G                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
+&kp ENTER     &key_repeat  &kp X  &kp C  &kp V  &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
+                                         &none  &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LC(LA(DEL))  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -626,10 +633,10 @@
         NAVI {
             display-name = "NAVI";
             bindings = <
-&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                        &none       &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &none
-&sk LC(LSHFT)    &none            &kp LEFT         &kp DOWN         &kp RIGHT      &none                                        &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK   &sk LCTRL
-&mt LC(Y) LC(Z)  &mt LC(F) LC(A)  &mt LC(X) LC(C)  &mt LG(V) LC(V)  &sk LSHFT      &none  &none                      &none      &none       &sk LSHFT       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp C_PREV  &kp C_NEXT
-                                                                    &none          &none  &none  &none    &dbl_mclk  &mkp LCLK  &trpl_mclk  &none
+&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                         &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &none
+&sk LC(LSHFT)    &kp LGUI         &kp LEFT         &kp DOWN         &kp RIGHT      &none                                         &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK   &sk LCTRL
+&mt LC(Y) LC(Z)  &mt LC(F) LC(A)  &mt LC(X) LC(C)  &mt LG(V) LC(V)  &sk LSHFT      &none  &none                       &none      &none  &sk LSHFT       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp C_PREV  &kp C_NEXT
+                                                                    &none          &none  &none  &none    &trpl_mclk  &mkp LCLK  &none  &none
             >;
 
             sensor-bindings =
@@ -696,10 +703,10 @@
         GAMING {
             display-name = "GAMING";
             bindings = <
-&kp N1     &kp R  &kp Q  &kp W  &kp E   &kp T                                    &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp F  &kp A  &kp S  &kp D   &kp G                                    &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V   &kp B  &kp ESC                    &none  &none  &none  &none  &none  &none  &none
-                                &kp N0  &kp M  &kp SPACE  &kp N    &none  &none  &none  &none
+&kp N1     &kp R  &kp Q  &kp W  &kp E    &kp T                                    &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp F  &kp A  &kp S  &kp D    &kp G                                    &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V    &kp B  &none                      &none  &none  &none  &none  &none  &none  &none
+                                &kp ESC  &kp M  &kp SPACE  &kp N    &none  &none  &none  &none
             >;
 
             sensor-bindings =
