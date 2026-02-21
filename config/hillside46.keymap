@@ -23,7 +23,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        ALPHA {
             /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Y   |   U   |   I   |   O   |   P   | BKSPC |
@@ -34,16 +34,16 @@
 
             display-name = "ALPHA";
             bindings = <
-&none      &kp B        &kp W  &kp M  &kp P     &kp Z                                      &none     &kp F     &kp U  &kp Y  &kp Q        &none
-&sl 4      &kp A        &kp S  &kp D  &kp F     &kp G                                      &kp J     &kp N     &kp A  &kp I  &kp O        &sl 4
-&kp ENTER  &key_repeat  &kp X  &kp C  &kp V     &kp ESC  &none                      &none  &kp LGUI  &kp L     &kp K  &kp V  &key_repeat  &kp ENTER
-                                      &kp LGUI  &kp TAB  &kp SPACE  &mo 0    &mo 0  &kp E  &kp LALT  &kp RGUI
+&none      &kp B        &kp W  &kp M  &kp P  &kp Z                                                  &none     &kp F  &kp U  &kp Y  &kp Q        &none
+&sl 4      &kp A        &kp S  &kp D  &kp F  &kp G                                                  &kp J     &kp N  &kp A  &kp I  &kp O        &sl 4
+&kp ENTER  &key_repeat  &kp X  &kp C  &kp V  &mt F4 ESC       &none                        &none    &kp LGUI  &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
+                                      &none  &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_1 {
+        NAVI {
             display-name = "NAVI";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -57,7 +57,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_2 {
+        NUM+SYM {
             display-name = "NUM+SYM";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -71,7 +71,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_3 {
+        STENO {
             display-name = "STENO";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -85,7 +85,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_4 {
+        QUICK {
             display-name = "QUICK";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -99,7 +99,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_5 {
+        BONUS {
             display-name = "BONUS";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
