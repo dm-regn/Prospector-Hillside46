@@ -32,19 +32,19 @@
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
 
-            display-name = "Alpha";
+            display-name = "ALPHA";
             bindings = <
-&kp GRAVE  &kp Q  &kp W  &kp E  &kp R     &kp T                                             &kp Y     &kp U     &kp I      &kp O    &kp P      &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D  &kp F     &kp G                                             &kp H     &kp J     &kp K      &kp L    &kp SEMI   &kp ENTER
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V     &kp B     &kp ESC                     &caps_word  &kp N     &kp M     &kp COMMA  &kp DOT  &kp SLASH  &kp SQT
-                                &kp LGUI  &kp LALT  &sk LSHIFT  &mo 0    &mo 0  &kp SPACE   &kp LALT  &kp RGUI
+&none      &kp B        &kp W  &kp M  &kp P     &kp Z                                      &none     &kp F     &kp U  &kp Y  &kp Q        &none
+&sl 4      &kp A        &kp S  &kp D  &kp F     &kp G                                      &kp J     &kp N     &kp A  &kp I  &kp O        &sl 4
+&kp ENTER  &key_repeat  &kp X  &kp C  &kp V     &kp ESC  &none                      &none  &kp LGUI  &kp L     &kp K  &kp V  &key_repeat  &kp ENTER
+                                      &kp LGUI  &kp TAB  &kp SPACE  &mo 0    &mo 0  &kp E  &kp LALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_1 {
-            display-name = "EOL";
+            display-name = "NAVI";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -58,7 +58,7 @@
         };
 
         layer_2 {
-            display-name = "EOL";
+            display-name = "NUM+SYM";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -72,7 +72,7 @@
         };
 
         layer_3 {
-            display-name = "EOL";
+            display-name = "STENO";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -86,7 +86,7 @@
         };
 
         layer_4 {
-            display-name = "EOL";
+            display-name = "QUICK";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
@@ -100,7 +100,7 @@
         };
 
         layer_5 {
-            display-name = "EOL";
+            display-name = "BONUS";
             bindings = <
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
