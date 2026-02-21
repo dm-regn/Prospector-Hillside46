@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
@@ -46,7 +47,7 @@
 
         R_ctrl {
             bindings = <&sk LCTRL>;
-            key-positions = <31 32>;
+            key-positions = <33 34>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
@@ -67,7 +68,7 @@
 
         caps {
             bindings = <&caps_word>;
-            key-positions = <40 41>;
+            key-positions = <41 42>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
