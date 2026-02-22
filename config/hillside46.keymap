@@ -628,7 +628,7 @@
 
             display-name = "HILLSIDE";
             bindings = <
-&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &none            &kp F  &kp U  &kp Y  &kp Q        &none
+&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &to 1            &kp F  &kp U  &kp Y  &kp Q        &none
 &sl 4         &kp R        &kp S  &kp T  &kp H        &kp X                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
 &mt F2 ENTER  &key_repeat  &kp C  &kp G  &kp D        &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
                                          &td_Lyr12    &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LC(LA(DEL))  &none
@@ -640,7 +640,7 @@
         NAVI {
             display-name = "NAVI";
             bindings = <
-&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                         &none  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &none
+&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                         &to 2  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &to 0
 &sk LC(LSHFT)    &kp LGUI         &kp LEFT         &kp DOWN         &kp RIGHT      &none                                         &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK   &sk LCTRL
 &mt LC(Y) LC(Z)  &mt LC(F) LC(A)  &mt LC(X) LC(C)  &mt LG(V) LC(V)  &sk LSHFT      &none  &none                       &none      &none  &sk LSHFT       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp C_PREV  &kp C_NEXT
                                                                     &to 0          &none  &none  &none    &trpl_mclk  &mkp LCLK  &none  &none
@@ -654,7 +654,7 @@
         NUM+SYM {
             display-name = "NUM+SYM";
             bindings = <
-&none   &none        &kp N5  &kp N3  &kp N4  &kp PRCNT                                         &none  &kp BSLH                 &kp HASH                  &kp CARET                    &kp GRAVE                      &none
+&none   &none        &kp N5  &kp N3  &kp N4  &kp PRCNT                                         &to 3  &kp BSLH                 &kp HASH                  &kp CARET                    &kp GRAVE                      &to 1
 &none   &key_repeat  &kp N0  &kp N1  &kp N2  &kp N7                                            &none  &kp ASTRK                &kp FSLH                  &kp PLUS                     &kp MINUS                      &mt COLON SEMI
 &trans  &kp EQUAL    &kp N9  &kp N8  &kp N6  &kp DLLR   &none                           &none  &none  &mt LT LEFT_PARENTHESIS  &mt GT RIGHT_PARENTHESIS  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &none
                                      &to 0   &none      &trans  &mt COMMA DOT    &none  &none  &none  &none
@@ -668,7 +668,7 @@
         STENO {
             display-name = "STENO";
             bindings = <
-&none         &stno_br  &year     &fast_na  &stno_pd  &none                                                    &none        &stno_fl  &stno_lu  &stno_ou  &none      &none
+&none         &stno_br  &year     &fast_na  &stno_pd  &none                                                    &to 4        &stno_fl  &stno_lu  &stno_ou  &none      &to 2
 &cma_prd 0 0  &stno_fe  &stno_sw  &stno_gt  &stno_gh  &kp BSPC                                                 &stno_je     &none     &stno_au  &stno_vi  &stno_ov   &stno_oo
 &kp DOT       &stno_ef  &stno_cs  &stno_gm  &stno_dp  &kp DEL      &none                         &none         &none        &stno_lf  &stno_ke  &stno_ve  &stno_eve  &semi
                                             &to 0     &kp LC(DEL)  &kp LC(BSPC)  &none    &none  &kp LC(BSPC)  &kp LC(DEL)  &none
@@ -682,7 +682,7 @@
         QUICK {
             display-name = "QUICK";
             bindings = <
-&none  &stno_rb  &none    &apos_m  &id_1st 0 0  &quotes 0 0                                                                                 &none     &none    &stno_ua  &apos_y   &stno_vy   &none
+&none  &stno_rb  &none    &apos_m  &id_1st 0 0  &quotes 0 0                                                                                 &to 5     &none    &stno_ua  &apos_y   &stno_vy   &to 3
 &none  &apos_re  &apos_s  &apos_t  &stno_ph     &par_chv 0 0                                                                                &stno_Le  &apos_n  &stno_ka  &none     &stno_vo   &none
 &none  &none     &apos_c  &none    &apos_d      &brk_brc 0 0  &none                                                                 &none   &none     &apos_L  &stno_ky  &apos_ve  &stno_ble  &none
                                    &to 0        &kp PIPE      &mt TILDE UNDER  &mt DOUBLE_QUOTES SINGLE_QUOTE    &mt QUESTION EXCL  &kp AT  &kp AMPS  &none
@@ -696,7 +696,7 @@
         BONUS {
             display-name = "BONUS";
             bindings = <
-&none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                &to 6  &none  &none  &none  &none  &to 4
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none  &none
                             &to 0  &none  &none  &none    &none  &none  &none  &none
@@ -710,7 +710,7 @@
         GAMING {
             display-name = "GAMING";
             bindings = <
-&kp N1     &kp R  &kp Q  &kp W  &kp E  &kp T                                    &none  &none  &none  &none  &none  &none
+&kp N1     &kp R  &kp Q  &kp W  &kp E  &kp T                                    &to 7  &none  &none  &none  &none  &to 5
 &kp LSHFT  &kp F  &kp A  &kp S  &kp D  &kp G                                    &none  &none  &none  &none  &none  &none
 &kp LCTRL  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp ESC                    &none  &none  &none  &none  &none  &none  &none
                                 &to 0  &kp M  &kp SPACE  &kp N    &none  &none  &none  &none
@@ -724,7 +724,7 @@
         EOL {
             display-name = "EOL";
             bindings = <
-&none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                                &to 0  &none  &none  &none  &none  &to 6
 &none  &none  &none  &none  &none  &none                                &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none  &none
                             &to 0  &none  &none  &none    &none  &none  &none  &none
