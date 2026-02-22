@@ -628,7 +628,7 @@
 
             display-name = "HILLSIDE";
             bindings = <
-&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &to 1            &kp F  &kp U  &kp Y  &kp Q        &none
+&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &to 1            &kp F  &kp U  &kp Y  &kp Q        &to 7
 &sl 4         &kp R        &kp S  &kp T  &kp H        &kp X                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
 &mt F2 ENTER  &key_repeat  &kp C  &kp G  &kp D        &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
                                          &td_Lyr12    &mt LG(TAB) TAB  &lt 1 SPACE  &mo 3    &mo 3  &lt 2 E  &kp LC(LA(DEL))  &none
