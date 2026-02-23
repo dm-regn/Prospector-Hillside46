@@ -90,7 +90,7 @@
         mute {
             bindings = <&kp C_MUTE>;
             key-positions = <45 44>;
-            layers = <0>;
+            layers = <1>;
             require-prior-idle-ms = <5>;
         };
 
@@ -110,7 +110,7 @@
 
         play_pause {
             bindings = <&kp C_PLAY_PAUSE>;
-            key-positions = <35 34>;
+            key-positions = <36 37>;
             layers = <1>;
             require-prior-idle-ms = <5>;
         };
@@ -640,10 +640,10 @@
         NAVI {
             display-name = "NAVI";
             bindings = <
-&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                         &to 2  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &to 0
-&sk LC(LSHFT)    &kp LGUI         &kp LEFT         &kp DOWN         &kp RIGHT      &none                                         &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK   &sk LCTRL
-&mt LC(Y) LC(Z)  &mt LC(F) LC(A)  &mt LC(X) LC(C)  &mt LG(V) LC(V)  &sk LSHFT      &none  &none                       &none      &none  &sk LSHFT       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp C_PREV  &kp C_NEXT
-                                                                    &to 0          &none  &none  &none    &trpl_mclk  &mkp LCLK  &none  &none
+&kp LC(MINUS)    &kp LC(EQUAL)    &mt HOME PG_UP   &kp UP           &mt END PG_DN  &none                                         &to 2         &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none       &to 0
+&sk LC(LSHFT)    &kp LGUI         &kp LEFT         &kp DOWN         &kp RIGHT      &none                                         &none         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK   &sk LCTRL
+&mt LC(Y) LC(Z)  &mt LC(F) LC(A)  &mt LC(X) LC(C)  &mt LG(V) LC(V)  &sk LSHFT      &none  &none                       &none      &none         &sk LSHFT       &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp C_PREV  &kp C_NEXT
+                                                                    &to 0          &none  &none  &none    &trpl_mclk  &mkp LCLK  &kp C_VOL_DN  &kp C_VOL_UP
             >;
 
             sensor-bindings =
