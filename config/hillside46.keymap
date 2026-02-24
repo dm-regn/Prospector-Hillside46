@@ -202,7 +202,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_LYR12";
             #binding-cells = <0>;
-            bindings = <&to 1>, <&to 2>;
+            bindings = <&to 2>, <&to 1>;
         };
     };
 
