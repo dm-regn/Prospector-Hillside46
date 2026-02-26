@@ -54,14 +54,14 @@
 
         L_shft {
             bindings = <&sk LSHFT>;
-            key-positions = <16 15>;
+            key-positions = <39 29>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
 
         R_shft {
             bindings = <&sk LSHFT>;
-            key-positions = <19 20>;
+            key-positions = <44 32>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
