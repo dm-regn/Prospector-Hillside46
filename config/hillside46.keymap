@@ -103,7 +103,7 @@
 
         R_shft_ent {
             bindings = <&kp LS(ENTER)>;
-            key-positions = <34 35>;
+            key-positions = <36 37>;
             layers = <0>;
             require-prior-idle-ms = <5>;
         };
