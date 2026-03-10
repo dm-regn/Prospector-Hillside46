@@ -135,6 +135,13 @@
             layers = <1>;
             require-prior-idle-ms = <5>;
         };
+
+        tab {
+            bindings = <&mt LG(TAB) TAB>;
+            key-positions = <1 2>;
+            layers = <0>;
+            require-prior-idle-ms = <5>;
+        };
     };
 
     behaviors {
@@ -628,10 +635,10 @@
 
             display-name = "D.MONEY";
             bindings = <
-&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                                  &to 1            &kp F  &kp U  &kp Y  &kp Q        &to 7
-&sl 4         &kp R        &kp S  &kp T  &kp H        &kp X                                                  &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
-&mt F2 ENTER  &key_repeat  &kp C  &kp G  &kp D        &mt F4 ESC       &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
-                                         &td_Lyr12    &mt LG(TAB) TAB  &lt 1 SPACE  &sl 3    &sl 3  &lt 2 E  &kp LC(LA(DEL))  &none
+&act_dir 0 0  &kp B        &kp W  &kp M  &mt PSCRN P  &kp Z                                             &to 1            &kp F  &kp U  &kp Y  &kp Q        &to 7
+&sl 4         &kp R        &kp S  &kp T  &kp H        &kp X                                             &kp J            &kp N  &kp A  &kp I  &kp O        &sl 4
+&mt F2 ENTER  &key_repeat  &kp C  &kp G  &kp D        &mt F4 ESC  &none                        &none    &kp LGUI         &kp L  &kp K  &kp V  &key_repeat  &kp ENTER
+                                         &td_Lyr12    &none       &lt 1 SPACE  &sl 3    &sl 3  &lt 2 E  &kp LC(LA(DEL))  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
